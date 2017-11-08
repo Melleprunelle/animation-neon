@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    section {
+        background-image: url(../assets/imgs/soft_kill.png);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            position: relative;
+            width: 30vw;
+            height: 20vh;
+            img {
+                position: absolute;
+                top: 0;
+                margin: 0 auto;
+                width: 30vw;
+                height: 20vh;
+                z-index: 2;
+            }
+            #blur {
+                filter: blur(5px);
+                z-index: 1;
+                animation: fade2 2s infinite alternate;
+            }
+        }
+        h1 {
+            margin: 0px;
+            transform: rotate(-3deg);
+            word-spacing: 0.1em;
+            line-height: 1.1em;
+            text-align: center;
+            font-size: 8em;
+            color: whitesmoke;
+            font-family: 'Monoton';
+            text-shadow: 0 0 0px whitesmoke, 0 0 5px whitesmoke, 0 0 10px #FF0000, 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 40px #FF0000, 0 0 100px #FF0000;
+            span {
+                color: rosybrown;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0 5px rosybrown, 0 0 10px darkred, 0 0 10px darkred, 0 0 20px darkred, 0 0 40px darkred, 0 0 100px darkred;
+                animation: fade 2s infinite alternate;
+            }
+        }
+        h2 {
+            transform: rotate(-3deg);
+            word-spacing: 0.1em;
+            font-size: 3em;
+            color: lightcyan;
+            font-family: 'Pacifico', sans-serif;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+            margin: 50px;
+            span {
+                font-family: "Open Sans";
+                animation: blink 0.05s infinite alternate;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes fade {
+    42% {
+        color: rosybrown;
+    }
+    44% {
+        color: whitesmoke;
+    }
+    45% {
+        color: rosybrown;
+    }
+    46% {
+        color: whitesmoke;
+    }
+    47% {
+        color: rosybrown;
+    }
+}
+
+@-webkit-keyframes fade2 {
+    42% {
+        opacity: 0.5;
+    }
+    44% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0.5;
+    }
+    46% {
+        opacity: 1;
+    }
+    47% {
+        opacity: 0.5;
+    }
+}
+
+@-webkit-keyframes blink {
+    45% {
+        opacity: 0.5;
+    }
+}

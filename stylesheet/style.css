@@ -1,0 +1,21 @@
+body {
+  margin: 0; }
+  body section {
+    background-image: url(../assets/imgs/soft_kill.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body section h1 {
+      transform: rotate(-3deg);
+      word-spacing: 0.3em;
+      font-size: 8em;
+      color: red;
+      font-family: 'Pacifico';
+      text-shadow: 0 0 0px whitesmoke, 0 0 5px whitesmoke, 0 0 10px crimson, 0 0 10px crimson, 0 0 20px crimson, 0 0 40px crimson, 0 0 100px crimson; }
+      body section h1 span {
+        opacity: 0.5;
+        color: red !important; }
+
+/*# sourceMappingURL=style.css.map */
